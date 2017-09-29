@@ -84,7 +84,7 @@ layout: default
 <!-- End Title -->
 
 <!-- Sub-Sections -->
-<div class="grid-x grid-padding-x">
+<div class="grid-x grid-padding-x grid-padding-y">
   {% for sub-section in page.section-four-sub-sections %}
   <div class="small-12 medium-4 cell" data-aos="fade-in">
     
@@ -94,7 +94,7 @@ layout: default
       </div>
     </div>
     
-    <div class="grid-x">
+    <div class="grid-x grid-padding-y">
       <div class="small-12 cell">     
         <h4>{{ sub-section.header }}</h4>
         <p>{{ sub-section.text }}</p>
@@ -127,7 +127,7 @@ layout: default
             <ul class="orbit-container">              
               {% for quote in page.section-five-quotes %}
                 <li class="is-active orbit-slide">
-                  <div class="grid-x grid-padding-x align-center">
+                  <div class="grid-x grid-padding-x grid-padding-y align-center">
                     
                     <div class="small-12 medium-4 cell">
                     <img src="{{quote.image}}">
