@@ -12,8 +12,6 @@ url: http://backthefuture.ufo.studio
 description: The BFI supports a love of film every step of the way.
 permalink: pretty
 exclude:
-- Gemfile
-- Gemfile.lock
 - bower.json
 - package.json
 - config.codekit3
