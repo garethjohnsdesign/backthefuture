@@ -27,6 +27,12 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/_config.yml": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/_config.yml",
+		"oF": 0
+		},
 	"\/_data\/navigation.yml": {
 		"ft": 8192,
 		"oA": 2,
@@ -98,6 +104,17 @@
 		"oA": 1,
 		"oAP": "\/build\/_site",
 		"oF": 0
+		},
+	"\/_uploads\/bfi-logo.png": {
+		"ft": 32768,
+		"iS": 4246,
+		"oA": 0,
+		"oAP": "\/_uploads\/bfi-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/_uploads\/helping-future-film-makers.jpg": {
 		"ft": 16384,
@@ -297,6 +314,34 @@
 		"oAP": "\/assets\/fonts\/gt-walshiem-regular.woff2",
 		"oF": 0
 		},
+	"\/assets\/fonts\/lg.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/lg.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/lg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/lg.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/lg.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/lg.ttf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/lg.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/lg.woff",
+		"oF": 0
+		},
 	"\/assets\/icons\/symbol-defs.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -306,6 +351,47 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/img\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/og-image.png": {
+		"ft": 32768,
+		"iS": 13990,
+		"oA": 0,
+		"oAP": "\/assets\/img\/og-image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/js\/app.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/min\/app-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/assets\/js\/min\/app-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/min\/min\/app-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/assets\/js\/min\/svgxuse-min.js": {
 		"ft": 64,
@@ -7154,7 +7240,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/lightgallery\/modules\/lg-video.js",
 		"oF": 0,
 		"sC": 1,
@@ -8587,6 +8673,18 @@
 		"oAP": "\/bower_components\/what-input\/yarn.lock",
 		"oF": 0
 		},
+	"\/Gemfile": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Gemfile",
+		"oF": 0
+		},
+	"\/Gemfile.lock": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Gemfile.lock",
+		"oF": 0
+		},
 	"\/humans.txt": {
 		"ft": 8192,
 		"oA": 2,
@@ -8665,6 +8763,56 @@
 "hooks": [
 	],
 "manualImportLinks": {
+	"\/assets\/js\/app.js": [
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/jquery\/dist\/jquery.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/aos\/dist\/aos.js",
+			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/flickity\/dist\/flickity.pkgd.js",
+			"position": 2,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/lightgallery\/dist\/js\/lightgallery.js",
+			"position": 3,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/lightgallery\/modules\/lg-video.js",
+			"position": 4,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/motion-ui\/dist\/motion-ui.js",
+			"position": 5,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/what-input\/dist\/what-input.js",
+			"position": 6,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/dist\/js\/foundation.js",
+			"position": 7,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"creationDate": 501170803,

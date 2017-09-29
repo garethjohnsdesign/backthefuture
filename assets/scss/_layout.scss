@@ -155,6 +155,13 @@ i, cite, em, var, address, dfn {
   font-size: 1.75rem;
 }
 
+.navigation__logo img {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  vertical-align: baseline;
+}
+
 .navigation__small {
   z-index: 3;
 }
