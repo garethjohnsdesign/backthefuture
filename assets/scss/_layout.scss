@@ -54,6 +54,30 @@
   }
 }
 
+@mixin gradient-animation( $start, $end, $transTime ){
+  background-size: 100%;
+  background-image: linear-gradient($start, $end);
+  position: relative;
+  z-index: 100;
+  &:before {
+    background-image: linear-gradient($end, $start);
+    content: '';    
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity $transTime;
+  }
+  &:hover {
+     &:before {
+       opacity: 1; 
+     }
+  }
+}
+
 // 2. Global
 // ---------
 
@@ -80,7 +104,6 @@ img {
   outline: 0;
 }
 
-
 // 3. Typography
 // -------------
 
@@ -101,13 +124,21 @@ i, cite, em, var, address, dfn {
 }
 
 .button--gradient {
- background-image: linear-gradient(to right, #D536A3 0%, #7F5090 100%);
- text-transform: uppercase;
- letter-spacing: $letter-spacing--loose;
- border: 0px;
+  @include button;
+  @include button-style(#D536A3, #7F5090, #FFFFFF);
+  border: 0px solid transparent;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-image: linear-gradient(to left, #D536A3 0%, #7F5090 100%);
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing--loose;
+ }
+ 
+ .button--gradient:hover {
+  background-position: right center; /* change the direction of the change here */
+  border: 0px solid transparent;
 }
-
-
+  
 
 // 4. Animations
 // ------
@@ -275,6 +306,10 @@ section {
   }
 }
 
+.section-one {
+  background-position: right bottom;
+}
+
 
 .section-arrow {
   position: absolute;
@@ -305,16 +340,34 @@ footer li a {
   color: $color--white;
 }
 
-#donateform {
-  background-color: white;
+.footer__film-forever {
+  height: 3rem;
+  width: auto;
+  vertical-align: baseline;
 }
 
-.donate-form {
-  background-color: white;
-}
+blockquote {
+      quotes: "“""”""‘""’  ";
+      border-left: none;
 
+      &:before {
+        content: open-quote;
+        color: $color--white;
+        font-size: 4em;
+        line-height: 0.1em;
+        vertical-align: -0.4em;
+      }
 
-.styleTheToggle{
-	@include mui-animation(hinge(in, top, edge, 2000px, from-back));
-	animation-duration: 1.8s;
+      &:after {
+        content: close-quote;
+        color: $color--white;
+        font-size: 4em;
+        line-height: 0.1em;
+        vertical-align: -0.6em;
+      }
+
+      .blockquote-content {
+        display: inline;
+        color: $color--white;
+      }
 }

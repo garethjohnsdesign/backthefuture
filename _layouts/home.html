@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- One -->
-<section class="section-one section-image grid-x align-middle align-center" style="background-image: url({{page.one-image}}); min-height: 100vh;">
+<section class="section-one section-image grid-x align-middle align-center" style="background-image: url({{page.section-one-image}}); min-height: 100vh;">
     <div class="small-11 medium-10 cell">
       
       <div class="grid-x grid-padding-x grid-padding-y">
@@ -12,8 +12,8 @@ layout: default
         </div>
         
         <div class="small-12 medium-6 cell" data-aos="fade-in" data-aos-delay="500">
-            <h3>Get behind film’s next generation</h3>
-            <a href="#donate" class="button button--gradient" data-smooth-scroll>Donate Now</a>
+            <h3>{{page.section-one-header-text}}</h3>
+            <a href="#donate" class="button--gradient" data-smooth-scroll>Donate Now</a>
         </div>
         
       </div>
@@ -34,13 +34,13 @@ layout: default
 
 
 <!-- Two -->
-<section class="section-image grid-x align-middle align-center" style="background-image: url({{page.two-image}}); min-height: 100vh;" id="section-two">
+<section class="section-image grid-x align-middle align-center" style="background-image: url({{page.section-two-image}}); min-height: 100vh;" id="section-two">
     <div class="small-11 medium-10 cell">
       
       <div class="grid-x grid-padding-x grid-padding-y">
         <div class="small-11 medium-6 cell" data-aos="fade-in">
-            <h1>The BFI supports a love of film every step of the way.</h1>
-      <p>Our education programmes shape the film culture of tomorrow by investing in the passion of young people today.  We believe everyone deserves the opportunity to enjoy, learn from, and take their place in film, in whatever way they choose.</p>
+            <h1>{{page.section-two-header-text}}</h1>
+            <p>{{page.section-two-paragraph-text}}</p>
         </div>
       </div>
     
@@ -50,7 +50,7 @@ layout: default
 <!-- End Two -->
 
 <!-- Three -->
-<section class="section-image grid-x align-middle align-center" style="background-image: url({{page.three-image}}); min-height: 100vh;">
+<section class="section-image grid-x align-middle align-center" style="background-image: url({{page.section-three-image}}); min-height: 100vh;">
   <div class="small-11 medium-10 cell">
     
     <div class="grid-x grid-padding-x grid-padding-y">
@@ -72,13 +72,13 @@ layout: default
 <!-- End Three -->
 
 <!-- Four -->
-<section class="section-image grid-x align-middle align-center" style="background-image: url({{page.four-image}}); min-height: 100vh;">
+<section class="section-image grid-x align-middle align-center" style="background-image: url({{page.section-four-image}}); min-height: 100vh;">
   <div class="small-11 medium-10 cell">
         
 <!-- Title -->
 <div class="grid-x grid-padding-x">
   <div class="small-12 medium-8 cell" data-aos="fade-in">
-    <h3>Every donation we receive can turn an hour into a day, a script into a shoot, a dreamer into an artist</h3>
+    <h3>{{page.section-four-header-text}}</h3>
   </div>
 </div>
 <!-- End Title -->
@@ -153,16 +153,66 @@ layout: default
 
 
 <!-- Five -->
-<section class="section-image grid-x align-middle align-center" style="background-image: url({{page.five-image}}); min-height: 100vh;">
+<section class="section-image grid-x align-middle align-center" style="background-image: url({{page.section-five-image}}); min-height: 100vh;">
     <div class="small-11 medium-10 cell">
-      
-      <div class="grid-x grid-padding-x grid-padding-y">
-        <div class="small-11 medium-6 cell" data-aos="fade-in">
-            <h1>Quote Section</h1>
-        </div>
-      </div>
-    
-    </div>
-  
+
+      <!-- Orbit -->
+        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+          <div class="orbit-wrapper">
+            <div class="orbit-controls">
+              <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><svg class="icon icon-chevron-left"><use xlink:href="/assets/icons/symbol-defs.svg#icon-chevron-left"></use></svg></button>
+              <button class="orbit-next"><span class="show-for-sr">Next Slide</span><svg class="icon icon-chevron-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-chevron-right"></use></svg></button>
+            </div>
+            <ul class="orbit-container">
+              
+              <!-- Slide One -->
+              <li class="is-active orbit-slide">
+              <div class="grid-x grid-padding-x align-center">
+                
+                <div class="small-12 medium-3 cell">
+                <img src="uploads/steve-mcqueen.jpg">
+                </div>
+                
+                <div class="small-12 medium-7 cell text-center ">
+                <h1>Steve McQueen</h1>
+                
+                <blockquote>
+                  <p class="blockquote-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repudiandae mollitia veniam obcaecati vitae eaque ullam, nostrum quos autem, laudantium cupiditate repellendus animi voluptas, aperiam distinctio at. Commodi, dolores, fugiat. Bacon ipsum dolor sit amet salami rump bacon, flank meatloaf pork belly spare ribs jerky. Corned beef sirloin short ribs ribeye salami, bacon flank shankle leberkas andouille tri-tip pork chop frankfurter.Chicken brisket cow, pork belly pork loin frankfurter ground round bacon.</p>
+                </blockquote>
+                
+                </div>
+                
+              </div>
+              </li>
+              <!-- End Slide One -->
+              
+              <!-- Slide Two -->
+              <li class="orbit-slide">
+              <div class="grid-x grid-padding-x align-center">
+                
+                <div class="small-12 medium-3 cell">
+                <img src="uploads/david-morrisey.jpg">
+                </div>
+                
+                <div class="small-12 medium-7 cell text-center ">
+                <h1>David Morrisey</h1>
+                
+                <blockquote>
+                  <p class="blockquote-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repudiandae mollitia veniam obcaecati vitae eaque ullam, nostrum quos autem, laudantium cupiditate repellendus animi voluptas, aperiam distinctio at. Commodi, dolores, fugiat. Bacon ipsum dolor sit amet salami rump bacon, flank meatloaf pork belly spare ribs jerky. Corned beef sirloin short ribs ribeye salami, bacon flank shankle leberkas andouille tri-tip pork chop frankfurter.Chicken brisket cow, pork belly pork loin frankfurter ground round bacon.</p>
+                </blockquote>
+                
+                </div>
+                
+              </div>
+              </li>
+              <!-- End Slide Two -->
+
+            </ul>
+          </div>
+        </div>     
+      <!-- End Orbit -->
+
+
+    </div>  
 </section>
 <!-- End Five -->
