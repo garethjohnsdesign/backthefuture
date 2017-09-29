@@ -5,10 +5,10 @@ section-one-image: "/uploads/section-01.jpg"
 section-one-header-text: Get behind film’s next generation.
 section-two-image: "/uploads/section-02.jpg"
 section-two-header-text: The BFI supports a love of film every step of the way.
-section-two-paragraph-text: Our education programmes shape the film culture of
-  tomorrow by investing in the passion of young people today.  We believe everyone
-  deserves the opportunity to enjoy, learn from, and take their place in film, in
-  whatever way they choose.
+section-two-paragraph-text: Our education programmes shape the film culture of tomorrow
+  by investing in the passion of young people today.  We believe everyone deserves
+  the opportunity to enjoy, learn from, and take their place in film, in whatever
+  way they choose.
 section-three-image: "/uploads/section-03.jpg"
 section-three-paragraph-text: We support potential right from the beginning.  The
   work we do deepens engagement with film, enriches learning, builds practical skills,
@@ -31,9 +31,9 @@ section-four-sub-sections:
     their background.
 - image: "/uploads/keeping-film-in-focus.jpg"
   header: Keeping Film in Focus
-  text: The BFI continues to champion film’s social, cultural and economic importance. Our
-    unique role as the UK’s advocate for moving image around the world underpins the
-    value and impact of film education.
+  text: The BFI continues to champion film’s social, cultural and economic importance.
+    Our unique role as the UK’s advocate for moving image around the world underpins
+    the value and impact of film education.
 section-five-image: "/uploads/section-05.jpg"
 section-five-quotes:
 - image: "/uploads/steve-mcqueen.jpg"
