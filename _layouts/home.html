@@ -86,7 +86,27 @@ layout: default
 <!-- Sub-Sections -->
 <div class="grid-x grid-padding-x">
 
+{% for sub-section in page.section-four-sub-sections %}
+<div class="small-12 medium-4 cell" data-aos="fade-in">
+  
+  <div class="grid-x grid-padding-y">
+    <div class="small-12 cell">
+      <img src="{{ sub-section.image }}">
+    </div>
+  </div>
+  
+  <div class="grid-x">
+    <div class="small-12 cell">     
+      <h4>{{ sub-section.header }}</h4>
+      <p>{{ sub-section.text }}</p>
+    </div>
+  </div>
+  
+</div>
+{% endfor %}
+    
 <!-- Sub-Section One -->
+<!--
 <div class="small-12 medium-4 cell" data-aos="fade-in">
   
   <div class="grid-x grid-padding-y">
@@ -103,9 +123,11 @@ layout: default
   </div>
   
 </div>
+-->
 <!-- End Sub-Section One -->
 
 <!-- Sub-Section Two -->
+<!--
 <div class="small-12 medium-4 cell" data-aos="fade-in">
   
   <div class="grid-x grid-padding-y">
@@ -122,9 +144,11 @@ layout: default
   </div>
   
 </div>
+-->
 <!-- End Sub-Section Two -->
 
 <!-- Sub-Section Three -->
+<!--
 <div class="small-12 medium-4 cell" data-aos="fade-in">
   
   <div class="grid-x grid-padding-y">
@@ -141,6 +165,7 @@ layout: default
   </div>
   
 </div>
+-->
 <!-- End Sub-Section Three -->
 </div>
 <!-- End Sub-Sections -->
