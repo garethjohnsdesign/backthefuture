@@ -85,95 +85,31 @@ layout: default
 
 <!-- Sub-Sections -->
 <div class="grid-x grid-padding-x">
-
-{% for sub-section in page.section-four-sub-sections %}
-<div class="small-12 medium-4 cell" data-aos="fade-in">
-  
-  <div class="grid-x grid-padding-y">
-    <div class="small-12 cell">
-      <img src="{{ sub-section.image }}">
-    </div>
-  </div>
-  
-  <div class="grid-x">
-    <div class="small-12 cell">     
-      <h4>{{ sub-section.header }}</h4>
-      <p>{{ sub-section.text }}</p>
-    </div>
-  </div>
-  
-</div>
-{% endfor %}
+  {% for sub-section in page.section-four-sub-sections %}
+  <div class="small-12 medium-4 cell" data-aos="fade-in">
     
-<!-- Sub-Section One -->
-<!--
-<div class="small-12 medium-4 cell" data-aos="fade-in">
-  
-  <div class="grid-x grid-padding-y">
-    <div class="small-12 cell">
-      <img src="uploads/reaching-teaching.jpg">
+    <div class="grid-x grid-padding-y">
+      <div class="small-12 cell">
+        <img src="{{ sub-section.image }}">
+      </div>
     </div>
-  </div>
-  
-  <div class="grid-x">
-    <div class="small-12 cell">     
-      <h4>Reaching and Teaching</h4>
-      <p>Our work with schools, teachers, youth groups and families introduces the power of film, both as an art form and as a tool for all kinds of learning, in the classroom and beyond.</p>
+    
+    <div class="grid-x">
+      <div class="small-12 cell">     
+        <h4>{{ sub-section.header }}</h4>
+        <p>{{ sub-section.text }}</p>
+      </div>
     </div>
+    
   </div>
-  
-</div>
--->
-<!-- End Sub-Section One -->
-
-<!-- Sub-Section Two -->
-<!--
-<div class="small-12 medium-4 cell" data-aos="fade-in">
-  
-  <div class="grid-x grid-padding-y">
-    <div class="small-12 cell">
-      <img src="uploads/helping-future-film-makers.jpg">
-    </div>
-  </div>
-  
-  <div class="grid-x">
-    <div class="small-12 cell">     
-      <h4>Helping Future Filmmakers</h4>
-      <p>BFI Future Film, BFI Film Academy and our hands-on programmes discover and support potential in those who want to make and shape the future of film, whatever their background.</p>
-    </div>
-  </div>
-  
-</div>
--->
-<!-- End Sub-Section Two -->
-
-<!-- Sub-Section Three -->
-<!--
-<div class="small-12 medium-4 cell" data-aos="fade-in">
-  
-  <div class="grid-x grid-padding-y">
-    <div class="small-12 cell">
-      <img src="uploads/keeping-film-in-focus.jpg">
-    </div>
-  </div>
-  
-  <div class="grid-x">
-    <div class="small-12 cell">     
-      <h4>Keeping Film in Focus</h4>
-      <p>The BFI continues to champion film’s social, cultural and economic importance.  Our unique role as the UK’s advocate for moving image around the world underpins the value and impact of film education.</p>
-    </div>
-  </div>
-  
-</div>
--->
-<!-- End Sub-Section Three -->
+  {% endfor %}
 </div>
 <!-- End Sub-Sections -->
 
 
       
-    </div>
-  </section>
+  </div>
+</section>
 <!-- End Four -->
 
 
@@ -188,50 +124,27 @@ layout: default
               <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><svg class="icon icon-chevron-left"><use xlink:href="/assets/icons/symbol-defs.svg#icon-chevron-left"></use></svg></button>
               <button class="orbit-next"><span class="show-for-sr">Next Slide</span><svg class="icon icon-chevron-right"><use xlink:href="/assets/icons/symbol-defs.svg#icon-chevron-right"></use></svg></button>
             </div>
-            <ul class="orbit-container">
-              
-              <!-- Slide One -->
-              <li class="is-active orbit-slide">
-              <div class="grid-x grid-padding-x align-center">
-                
-                <div class="small-12 medium-3 cell">
-                <img src="uploads/steve-mcqueen.jpg">
-                </div>
-                
-                <div class="small-12 medium-7 cell text-center ">
-                <h1>Steve McQueen</h1>
-                
-                <blockquote>
-                  <p class="blockquote-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repudiandae mollitia veniam obcaecati vitae eaque ullam, nostrum quos autem, laudantium cupiditate repellendus animi voluptas, aperiam distinctio at. Commodi, dolores, fugiat. Bacon ipsum dolor sit amet salami rump bacon, flank meatloaf pork belly spare ribs jerky. Corned beef sirloin short ribs ribeye salami, bacon flank shankle leberkas andouille tri-tip pork chop frankfurter.Chicken brisket cow, pork belly pork loin frankfurter ground round bacon.</p>
-                </blockquote>
-                
-                </div>
-                
-              </div>
-              </li>
-              <!-- End Slide One -->
-              
-              <!-- Slide Two -->
-              <li class="orbit-slide">
-              <div class="grid-x grid-padding-x align-center">
-                
-                <div class="small-12 medium-3 cell">
-                <img src="uploads/david-morrisey.jpg">
-                </div>
-                
-                <div class="small-12 medium-7 cell text-center ">
-                <h1>David Morrisey</h1>
-                
-                <blockquote>
-                  <p class="blockquote-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repudiandae mollitia veniam obcaecati vitae eaque ullam, nostrum quos autem, laudantium cupiditate repellendus animi voluptas, aperiam distinctio at. Commodi, dolores, fugiat. Bacon ipsum dolor sit amet salami rump bacon, flank meatloaf pork belly spare ribs jerky. Corned beef sirloin short ribs ribeye salami, bacon flank shankle leberkas andouille tri-tip pork chop frankfurter.Chicken brisket cow, pork belly pork loin frankfurter ground round bacon.</p>
-                </blockquote>
-                
-                </div>
-                
-              </div>
-              </li>
-              <!-- End Slide Two -->
-
+            <ul class="orbit-container">              
+              {% for quote in page.section-five-quotes %}
+                <li class="is-active orbit-slide">
+                  <div class="grid-x grid-padding-x align-center">
+                    
+                    <div class="small-12 medium-4 cell">
+                    <img src="{{quote.image}}">
+                    </div>
+                    
+                    <div class="small-12 medium-6 cell text-center ">
+                    <h1>{{quote.name}}</h1>
+                    
+                    <blockquote>
+                      <p class="blockquote-content">{{quote.text}}</p>
+                    </blockquote>
+                    
+                    </div>
+                    
+                  </div>
+                </li>
+              {% endfor %}
             </ul>
           </div>
         </div>     
