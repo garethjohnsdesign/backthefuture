@@ -1,0 +1,313 @@
+//  Table of Contents:
+//
+//   1. Mixins
+//   2. Global
+//   3. Typography
+//   4. Animations
+//   5. Loading
+//   6. Navigation
+//   7. Index
+//   8. Projects
+//   9. Project
+//   10. All
+//   11. Journal
+//   12. About
+//   15. Footer
+
+// 1. Mixins
+// ---------
+
+
+@mixin links ($link, $hover) {
+  a {
+    color: $link;
+    &:hover {
+      color: $hover;   
+    }
+  }
+}
+
+@mixin link-underline($color, $size, $duration, $centered) {
+  color: $color;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  
+  &:before {
+    background-color: $color;
+    content: '';
+    height: $size;
+    position: absolute;
+    bottom: 0 - ($size/2);
+    transition: $duration;
+    width: 0;
+    @if $centered == 'true' {
+      left: 50%;
+      transform: translateX(-50%); 
+    }
+  }
+  
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+// 2. Global
+// ---------
+
+body {
+  cursor: default;
+}
+
+svg {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: $primary-color;
+  color: $secondary-color;
+}
+
+:focus {
+  outline: 0;
+}
+
+
+// 3. Typography
+// -------------
+
+a {
+  transition: $primary-transition;
+}
+
+a:hover {
+  color: $color--highlight;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+i, cite, em, var, address, dfn {
+  font-style: normal;
+}
+
+.button--gradient {
+ background-image: linear-gradient(to right, #D536A3 0%, #7F5090 100%);
+ text-transform: uppercase;
+ letter-spacing: $letter-spacing--loose;
+ border: 0px;
+}
+
+
+
+// 4. Animations
+// ------
+
+[data-aos='fade-up'] {
+  transform: translate(0, 1rem);
+}
+
+// 5. Loading
+// ------
+
+.loader {
+  z-index: 3;
+  position: fixed;
+  background: $color--highlight;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
+  opacity: 1;
+  transition: $primary-transition;
+  visibility: visible;  
+  &.loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+// 6. Navigation
+// ------
+
+.navigation {
+  z-index: 3;
+  padding: 2rem 1rem 1rem 1rem;
+  font-family: $header-font-family;
+  @include breakpoint(medium) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  @include breakpoint(large) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+}
+
+.navigation__logo {
+  font-size: 1.75rem;
+}
+
+.navigation__small {
+  z-index: 3;
+}
+
+.navigation--mobile {
+  z-index: 1;
+  position: fixed;
+  background: $color--highlight;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
+  opacity: 0;
+  transition: $primary-transition;
+  visibility: hidden;
+  font-family: $header-font-family;
+  font-size: 1.5rem;
+
+  &.open {
+    opacity: 0.8;
+    visibility: visible;
+  }
+  
+  a {
+    color: $color--white;
+    padding: 1rem 0rem;
+  }
+  
+  a:hover {
+    color: $color--highlight;
+  }
+  
+  .menu .active>a {
+    color: black;
+  }
+  
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: $color--white;
+  } 
+}
+
+.navigation--light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  
+  ul {
+    background-color: transparent;
+  }
+  
+  a {
+    color: $color--white;
+  }
+  
+  a:hover {
+    color: $color--white;
+  }
+  
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: $color--white;
+  }
+}
+
+// 7. Lightgallery
+// ---------------
+
+.lg-sub-html {
+  font-family: $header-font-family;
+}
+
+// 7. Section
+// ------
+
+/*
+section {
+  padding: 2rem 1rem 1rem 1rem;
+  font-family: $header-font-family;
+  @include breakpoint(medium) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  @include breakpoint(large) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+}
+*/
+
+// 7. Home
+// ------
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/*
+.section-one {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+*/
+
+.section-image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  @include breakpoint(small only) {
+  background-position: 50% 0%;
+  }
+}
+
+
+.section-arrow {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+
+// 4. Footer
+// ---------
+
+footer {
+  margin-top: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
+  @include breakpoint(medium) {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  @include breakpoint(large) {
+    padding: 3rem 3rem 3rem 3rem;
+  }
+  font-family: 'Marr Sans Semibold', sans-serif;
+}
+
+footer .menu .menu-text {
+  color: $color--white;
+}
+
+footer li a {
+  color: $color--white;
+}
+
+#donateform {
+  background-color: white;
+}
+
+.donate-form {
+  background-color: white;
+}
+
+
+.styleTheToggle{
+	@include mui-animation(hinge(in, top, edge, 2000px, from-back));
+	animation-duration: 1.8s;
+}

@@ -1,0 +1,51 @@
+---
+title: BFI | Back The Future
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: false
+  uploads:
+    title: Uploads
+    output: false
+url: https://www.backthefuture.com
+description: The BFI supports a love of film every step of the way.
+permalink: pretty
+exclude:
+- bower.json
+- package.json
+- config.codekit3
+- README*
+- LICENSE*
+- CHANGELOG*
+- node_modules
+- ".gitignore"
+- bower_components
+- assets/scss
+plugins:
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-mentions
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+colophon: http://garethjohnsdesign.com
+company: BFI
+email: info@backthefuture.com
+google_site_verification: 
+analytics: 
+logo: "/assets/img/logo.svg"
+per_page: 12
+date_format: "%d %B %Y"
+future: true
+social:
+  instagram:
+compress_html:
+  comments:
+  - "<!-- "
+  - " -->"
+  blanklines: true
+  profile: false

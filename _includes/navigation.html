@@ -1,0 +1,14 @@
+{% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
+<!-- Navigation -->
+<div class="grid-x navigation align-justify {% if page.layout == 'home' %}navigation--light{% endif %}" {% if page.layout == 'home' %}data-aos="fade-down{% endif %}">
+  
+  <div class="shrink cell navigation__small navigation__logo show-for-medium">
+    <a href="#donate" data-smooth-scroll><svg class="icon icon-logo-inline"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo-inline"></use></svg></a>
+  </div>
+  
+  <div class="shrink cell show-for-medium">
+    <a href="#donate" class="button button--gradient" data-smooth-scroll>Donate Now</a>
+  </div>
+
+</div>
+<!-- End Navigation -->
