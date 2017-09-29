@@ -35,6 +35,21 @@ section-four-sub-sections:
     unique role as the UK’s advocate for moving image around the world underpins the
     value and impact of film education.
 section-five-image: "/uploads/section-05.jpg"
+section-five-quotes:
+- image: "/uploads/steve-mcqueen.jpg"
+  name: Steve McQueen
+  text: It is such an honour to support the BFI's 'Back to the Future' campaign as
+    they work to revolutionise our industry and make it as inclusive, accessible and
+    filled with the greatest talent from the widest possible pool in our society.
+    Hopefully, with campaigns such as this, no one will ever feel the doors to our
+    industry we're closed to them.
+- image: "/uploads/david-morrisey.jpg"
+  name: David Morrisey
+  text: Film education, in all its forms, deserves pride of place in the classroom
+    and beyond. What other medium has the same potential as the moving image to inspire
+    minds and ignite passions? If we are to truly back the future, we must have faith
+    in the power of film, both in and of itself and as a tool for teaching all manner
+    of subjects.
 layout: home
 ---
 
