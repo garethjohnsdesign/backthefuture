@@ -1,46 +1,13 @@
 ---
 layout: default
 ---
-
-<!-- One -->
-<section class="section-one section-image grid-x align-middle align-center" style="background-image: url({{page.section-one-image}}); min-height: 100vh;">
     
-    <div class="grid-x navigation" data-aos="fade-down">
-      <div class="shrink cell">
-        <a href="#donate" data-smooth-scroll><img src="uploads/film-forever.png" class="section-one__film-forever"></a>
-      </div>
-    </div>
-
-    <div class="small-11 medium-10 cell">
-      <div class="grid-x grid-padding-x grid-padding-y">
-        <div class="small-12 medium-6 cell" data-aos="fade-in" data-aos-delay="500">
-            <a href="#donate" data-toggle="donate" data-smooth-scroll><svg class="icon icon-logo-stacked-rev"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo-stacked-rev"></use></svg></a>
-        </div>
-        <div class="small-12 medium-6 cell" data-aos="fade-in" data-aos-delay="500">
-            <h3>{{page.section-one-header-text}}</h3>
-            <a href="#donate" class="button--gradient" data-smooth-scroll>Donate Now</a>
-        </div>
-      </div>
-    </div>
-  
-    <div class="section-arrow">
-      <div class="grid-x align-center">
-        <div class="shrink cell">
-          <a href="#section-two" data-smooth-scroll><svg class="icon icon-chevron-down"><use xlink:href="/assets/icons/symbol-defs.svg#icon-chevron-down"></use></svg></a>
-        </div>
-      </div>
-    </div>
-  
-</section>
-<!-- End One -->
-
-
 <!-- Two -->
-<section class="section-image grid-x align-middle align-center" style="background-image: url({{page.section-two-image}}); min-height: 100vh;" id="section-two">
+<section class="section-image section-two grid-x align-middle align-center" style="background-image: url({{page.section-two-image}});" id="section-two">
     
+    <div data-sticky-container style="width:100%">
     <!-- Navigation -->
-    <div class="grid-x navigation align-justify" data-aos="fade-down">
-      
+    <div class="grid-x navigation-new align-justify sticky" data-sticky data-options="scrolltop: false" data-anchor="content-test">
       <div class="shrink cell navigation__logo">
         <a href="#donate" data-smooth-scroll>
           <img src="uploads/bfi-logo.png">
@@ -51,11 +18,11 @@ layout: default
       <div class="shrink cell show-for-medium">
         <a href="#donate" class="button button--gradient" data-smooth-scroll>Donate Now</a>
       </div>
-    
     </div>
     <!-- End Navigation -->
+    </div>
     
-    <div class="small-11 medium-10 cell">
+    <div class="small-11 medium-10 cell section-two__content">
       <div class="grid-x grid-padding-x grid-padding-y">
         <div class="small-11 medium-6 cell" data-aos="fade-in">
             <h1>{{page.section-two-header-text}}</h1>
@@ -63,27 +30,25 @@ layout: default
         </div>
       </div>
     </div>
-  
+    
 </section>
 <!-- End Two -->
 
 <!-- Three -->
 <section class="section-three section-image grid-x align-middle align-center" style="min-height: 100vh;">
   <div class="small-11 medium-10 cell">
-    
     <div class="grid-x grid-padding-x grid-padding-y">
       <div class="small-11 medium-6 cell" data-aos="fade-in">
         <p>{{page.section-three-paragraph-text}}</p>        
       </div>
     </div>
-  
   </div>
   
-    <video autoplay loop="true" muted>
-      <source src="assets/videos/film.mp4" type="video/mp4">
-      <source src="assets/videos/film.ogg" type="video/ogg">
-      Your browser does not support the video tag.
-    </video>
+  <video autoplay loop="true" muted>
+    <source src="assets/videos/film.mp4" type="video/mp4">
+    <source src="assets/videos/film.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
         
 </section>
 <!-- End Three -->
@@ -92,39 +57,37 @@ layout: default
 <section class="section-image grid-x align-middle align-center" style="background-image: url({{page.section-four-image}}); min-height: 100vh;">
   <div class="small-11 medium-10 cell">
         
-<!-- Title -->
-<div class="grid-x grid-padding-x">
-  <div class="small-12 medium-8 cell" data-aos="fade-in">
-    <h3>{{page.section-four-header-text}}</h3>
-  </div>
-</div>
-<!-- End Title -->
+    <!-- Title -->
+    <div class="grid-x grid-padding-x">
+      <div class="small-12 medium-8 cell" data-aos="fade-in">
+        <h3>{{page.section-four-header-text}}</h3>
+      </div>
+    </div>
+    <!-- End Title -->
 
-<!-- Sub-Sections -->
-<div class="grid-x grid-padding-y">
-  {% for sub-section in page.section-four-sub-sections %}
-  <div class="small-12 medium-4 cell" data-aos="fade-in">
-    
+    <!-- Sub-Sections -->
     <div class="grid-x grid-padding-y">
-      <div class="small-12 cell">
-        <img src="{{ sub-section.image }}">
+      {% for sub-section in page.section-four-sub-sections %}
+      <div class="small-12 medium-4 cell" data-aos="fade-in">
+        
+        <div class="grid-x grid-padding-y">
+          <div class="small-12 cell">
+            <img src="{{ sub-section.image }}">
+          </div>
+        </div>
+        
+        <div class="grid-x grid-padding-x grid-padding-y">
+          <div class="small-12 cell">     
+            <h4>{{ sub-section.header }}</h4>
+            <p>{{ sub-section.text }}</p>
+          </div>
+        </div>
+        
       </div>
+      {% endfor %}
     </div>
-    
-    <div class="grid-x grid-padding-x grid-padding-y">
-      <div class="small-12 cell">     
-        <h4>{{ sub-section.header }}</h4>
-        <p>{{ sub-section.text }}</p>
-      </div>
-    </div>
-    
-  </div>
-  {% endfor %}
-</div>
-<!-- End Sub-Sections -->
+    <!-- End Sub-Sections -->
 
-
-      
   </div>
 </section>
 <!-- End Four -->

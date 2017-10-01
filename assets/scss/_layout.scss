@@ -168,6 +168,34 @@ i, cite, em, var, address, dfn {
   }
 }
 
+.navigation-new {
+
+  padding: 2rem 1rem 1rem 1rem;
+  @include breakpoint(medium) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  @include breakpoint(large) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+/*
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+*/
+/*
+  padding: 2rem 1rem 1rem 1rem;
+  @include breakpoint(medium) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  @include breakpoint(large) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+*/
+}
+
 .navigation__logo {
   font-size: 1.75rem;
 }
@@ -210,6 +238,14 @@ section {
   width: 100%;
 }
 
+// Sticky
+
+/*
+.sticky-content {
+  position: relative;
+}
+*/
+
 // 7. Section One
 // ------
 
@@ -221,6 +257,16 @@ section {
   height: 3rem;
   width: auto;
   vertical-align: baseline;
+}
+
+.section-two {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.section-two__content {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 // 7. Section Three

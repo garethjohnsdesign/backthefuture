@@ -6586,6 +6586,31 @@ i, cite, em, var, address, dfn {
     .navigation {
       padding: 2rem 2rem 1rem 2rem; } }
 
+.navigation-new {
+  padding: 2rem 1rem 1rem 1rem;
+  /*
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+*/
+  /*
+  padding: 2rem 1rem 1rem 1rem;
+  @include breakpoint(medium) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  @include breakpoint(large) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+*/ }
+  @media print, screen and (min-width: 40em) {
+    .navigation-new {
+      padding: 2rem 2rem 1rem 2rem; } }
+  @media print, screen and (min-width: 64em) {
+    .navigation-new {
+      padding: 2rem 2rem 1rem 2rem; } }
+
 .navigation__logo {
   font-size: 1.75rem; }
 
@@ -6616,6 +6641,11 @@ section {
   bottom: 1rem;
   width: 100%; }
 
+/*
+.sticky-content {
+  position: relative;
+}
+*/
 .section-one {
   background-position: right bottom; }
 
@@ -6623,6 +6653,14 @@ section {
   height: 3rem;
   width: auto;
   vertical-align: baseline; }
+
+.section-two {
+  padding-top: 0rem;
+  padding-bottom: 0rem; }
+
+.section-two__content {
+  padding-top: 3rem;
+  padding-bottom: 5rem; }
 
 .section-three {
   position: relative; }

@@ -1,5 +1,5 @@
 ---
-title: BFI | Back The Future
+title: Back The Future
 image: "/assets/img/og-image.png"
 section-one-image: "/uploads/section-01.jpg"
 section-one-header-text: Get behind film’s next generation
