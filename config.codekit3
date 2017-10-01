@@ -33,12 +33,6 @@
 		"oAP": "\/_config.yml",
 		"oF": 0
 		},
-	"\/_data\/navigation.yml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_data\/navigation.yml",
-		"oF": 0
-		},
 	"\/_includes\/analytics.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -57,12 +51,6 @@
 		"oAP": "\/_includes\/head.html",
 		"oF": 0
 		},
-	"\/_includes\/navigation--mobile.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_includes\/navigation--mobile.html",
-		"oF": 0
-		},
 	"\/_includes\/navigation.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -73,6 +61,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_includes\/scripts.html",
+		"oF": 0
+		},
+	"\/_includes\/video.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_includes\/video.html",
 		"oF": 0
 		},
 	"\/_layouts\/compress.html": {
@@ -249,12 +243,12 @@
 		},
 	"\/_uploads\/section-01.jpg": {
 		"ft": 16384,
-		"iS": 151656,
+		"iS": 403266,
 		"oA": 0,
 		"oAP": "\/_uploads\/section-01.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_uploads\/section-02.jpg": {
@@ -1095,6 +1089,12 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/assets\/videos\/film.mp4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/videos\/film.mp4",
+		"oF": 0
 		},
 	"\/bower.json": {
 		"ft": 524288,
@@ -8801,6 +8801,30 @@
 		"oA": 2,
 		"oAP": "\/humans.txt",
 		"oF": 0
+		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
+	"\/index.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0,
+		"oFM": 9,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/LICENSE.md": {
 		"cS": 0,

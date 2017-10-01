@@ -4,30 +4,32 @@ layout: default
 
 <!-- One -->
 <section class="section-one section-image grid-x align-middle align-center" style="background-image: url({{page.section-one-image}}); min-height: 100vh;">
+    
+    <div class="grid-x navigation" data-aos="fade-down">
+      <div class="shrink cell">
+        <a href="#donate" data-smooth-scroll><img src="uploads/film-forever.png" class="section-one__film-forever"></a>
+      </div>
+    </div>
+
     <div class="small-11 medium-10 cell">
-      
       <div class="grid-x grid-padding-x grid-padding-y">
         <div class="small-12 medium-6 cell" data-aos="fade-in" data-aos-delay="500">
             <a href="#donate" data-toggle="donate" data-smooth-scroll><svg class="icon icon-logo-stacked-rev"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo-stacked-rev"></use></svg></a>
         </div>
-        
         <div class="small-12 medium-6 cell" data-aos="fade-in" data-aos-delay="500">
             <h3>{{page.section-one-header-text}}</h3>
             <a href="#donate" class="button--gradient" data-smooth-scroll>Donate Now</a>
         </div>
-        
       </div>
-    
     </div>
-
   
-  <div class="section-arrow">
-    <div class="grid-x align-center">
-      <div class="shrink cell">
-        <a href="#section-two" data-smooth-scroll><svg class="icon icon-chevron-down"><use xlink:href="/assets/icons/symbol-defs.svg#icon-chevron-down"></use></svg></a>
+    <div class="section-arrow">
+      <div class="grid-x align-center">
+        <div class="shrink cell">
+          <a href="#section-two" data-smooth-scroll><svg class="icon icon-chevron-down"><use xlink:href="/assets/icons/symbol-defs.svg#icon-chevron-down"></use></svg></a>
+        </div>
       </div>
     </div>
-  </div>
   
 </section>
 <!-- End One -->
@@ -35,39 +37,54 @@ layout: default
 
 <!-- Two -->
 <section class="section-image grid-x align-middle align-center" style="background-image: url({{page.section-two-image}}); min-height: 100vh;" id="section-two">
-    <div class="small-11 medium-10 cell">
+    
+    <!-- Navigation -->
+    <div class="grid-x navigation align-justify" data-aos="fade-down">
       
+      <div class="shrink cell navigation__logo">
+        <a href="#donate" data-smooth-scroll>
+          <img src="uploads/bfi-logo.png">
+           <span class=""><svg class="icon icon-logo-inline"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo-inline"></use></svg></span>
+        </a>
+      </div>
+      
+      <div class="shrink cell show-for-medium">
+        <a href="#donate" class="button button--gradient" data-smooth-scroll>Donate Now</a>
+      </div>
+    
+    </div>
+    <!-- End Navigation -->
+    
+    <div class="small-11 medium-10 cell">
       <div class="grid-x grid-padding-x grid-padding-y">
         <div class="small-11 medium-6 cell" data-aos="fade-in">
             <h1>{{page.section-two-header-text}}</h1>
             <p>{{page.section-two-paragraph-text}}</p>
         </div>
       </div>
-    
     </div>
   
 </section>
 <!-- End Two -->
 
 <!-- Three -->
-<section class="section-image grid-x align-middle align-center" style="background-image: url({{page.section-three-image}}); min-height: 100vh;">
+<section class="section-three section-image grid-x align-middle align-center" style="min-height: 100vh;">
   <div class="small-11 medium-10 cell">
     
     <div class="grid-x grid-padding-x grid-padding-y">
       <div class="small-11 medium-6 cell" data-aos="fade-in">
-        <p>We support potential right from the beginning.  The work we do deepens engagement with film, enriches learning, builds practical skills, and helps young people to understand and contribute to the world around them. Your help will ensure that everyone who comes through our doors has the BFI behind them, and feels that anything is possible.</p>
-        
-        <div id="video-gallery">
-        <a href="https://youtu.be/VOL6VzO33lM" class="">
-          <svg class="icon icon-play-circle"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play-circle"></use></svg>
-          <span class="button-icon-badge-text">Click To Watch Film</span>
-        </a>
-        </div>
-        
+        <p>{{page.section-three-paragraph-text}}</p>        
       </div>
     </div>
   
   </div>
+  
+    <video autoplay loop="true" muted>
+      <source src="assets/videos/film.mp4" type="video/mp4">
+      <source src="assets/videos/film.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+        
 </section>
 <!-- End Three -->
 
@@ -84,7 +101,7 @@ layout: default
 <!-- End Title -->
 
 <!-- Sub-Sections -->
-<div class="grid-x grid-padding-x grid-padding-y">
+<div class="grid-x grid-padding-y">
   {% for sub-section in page.section-four-sub-sections %}
   <div class="small-12 medium-4 cell" data-aos="fade-in">
     
@@ -94,7 +111,7 @@ layout: default
       </div>
     </div>
     
-    <div class="grid-x grid-padding-y">
+    <div class="grid-x grid-padding-x grid-padding-y">
       <div class="small-12 cell">     
         <h4>{{ sub-section.header }}</h4>
         <p>{{ sub-section.text }}</p>
@@ -115,10 +132,10 @@ layout: default
 
 <!-- Five -->
 <section class="section-image grid-x align-middle align-center" style="background-image: url({{page.section-five-image}}); min-height: 100vh;">
-    <div class="small-11 medium-10 cell">
+    <div class="small-12 cell">
 
       <!-- Orbit -->
-        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <div class="orbit" role="region" aria-label="Quotes" data-orbit>
           <div class="orbit-wrapper">
             <div class="orbit-controls">
               <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><svg class="icon icon-chevron-left"><use xlink:href="/assets/icons/symbol-defs.svg#icon-chevron-left"></use></svg></button>
@@ -129,16 +146,18 @@ layout: default
                 <li class="is-active orbit-slide">
                   <div class="grid-x grid-padding-x grid-padding-y align-center">
                     
-                    <div class="small-12 medium-4 cell">
+                    <div class="small-8 medium-3 cell">
                     <img src="{{quote.image}}">
                     </div>
                     
-                    <div class="small-12 medium-6 cell text-center ">
-                    <h1>{{quote.name}}</h1>
+                    <div class="small-8 medium-6 cell text-center ">
+                    <h2>{{quote.name}}</h2>
                     
                     <blockquote>
                       <p class="blockquote-content">{{quote.text}}</p>
                     </blockquote>
+                    
+                    {{ forloop.index }} of {{ forloop.length }} 
                     
                     </div>
                     

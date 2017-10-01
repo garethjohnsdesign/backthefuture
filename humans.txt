@@ -3,10 +3,14 @@ Gareth Johns Design + Development
 The team, technology & tools behind this site.
 
 
-GARETH JOHNS ART DESIGN + DEVELOPMENT TEAM
+GARETH JOHNS DESIGN + DEVELOPMENT TEAM
 --------
 
 Made with love in London.
+
+Ben Walker
+Design
+@ufo.studio
 
 Gareth Johns
 Development

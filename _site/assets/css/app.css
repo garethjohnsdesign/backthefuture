@@ -5740,7 +5740,7 @@ Single-colored icons can be modified like so:
   width: 1.4033203125em; }
 
 .icon-logo-stacked-rev {
-  font-size: 15rem; }
+  font-size: 12.5rem; }
 
 .icon-chevron-down {
   font-size: 2rem; }
@@ -6567,31 +6567,18 @@ i, cite, em, var, address, dfn {
 
 .button--gradient:hover {
   background-position: right center;
-  /* change the direction of the change here */
   border: 0px solid transparent; }
 
 [data-aos='fade-up'] {
   transform: translate(0, 1rem); }
 
-.loader {
-  z-index: 3;
-  position: fixed;
-  background: #D536A3;
+.navigation {
+  position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  opacity: 1;
-  transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
-  visibility: visible; }
-  .loader.loaded {
-    opacity: 0;
-    visibility: hidden; }
-
-.navigation {
   z-index: 3;
-  padding: 2rem 1rem 1rem 1rem;
-  font-family: "GT Walshiem Regular", sans-serif; }
+  padding: 2rem 1rem 1rem 1rem; }
   @media print, screen and (min-width: 40em) {
     .navigation {
       padding: 2rem 2rem 1rem 2rem; } }
@@ -6608,75 +6595,13 @@ i, cite, em, var, address, dfn {
   width: 2rem;
   vertical-align: baseline; }
 
-.navigation__small {
-  z-index: 3; }
-
-.navigation--mobile {
-  z-index: 1;
-  position: fixed;
-  background: #D536A3;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
-  visibility: hidden;
-  font-family: "GT Walshiem Regular", sans-serif;
-  font-size: 1.5rem; }
-  .navigation--mobile.open {
-    opacity: 0.8;
-    visibility: visible; }
-  .navigation--mobile a {
-    color: #FFFFFF;
-    padding: 1rem 0rem; }
-  .navigation--mobile a:hover {
-    color: #D536A3; }
-  .navigation--mobile .menu .active > a {
-    color: black; }
-  .navigation--mobile .hamburger-inner, .navigation--mobile .hamburger-inner::before, .navigation--mobile .hamburger-inner::after {
-    background-color: #FFFFFF; }
-
-.navigation--light {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: transparent; }
-  .navigation--light ul {
-    background-color: transparent; }
-  .navigation--light a {
-    color: #FFFFFF; }
-  .navigation--light a:hover {
-    color: #FFFFFF; }
-  .navigation--light .hamburger-inner, .navigation--light .hamburger-inner::before, .navigation--light .hamburger-inner::after {
-    background-color: #FFFFFF; }
-
 .lg-sub-html {
   font-family: "GT Walshiem Regular", sans-serif; }
 
-/*
-section {
-  padding: 2rem 1rem 1rem 1rem;
-  font-family: $header-font-family;
-  @include breakpoint(medium) {
-    padding: 2rem 2rem 1rem 2rem;
-  }
-  @include breakpoint(large) {
-    padding: 2rem 2rem 1rem 2rem;
-  }
-}
-*/
 section {
   padding-top: 5rem;
   padding-bottom: 5rem; }
 
-/*
-.section-one {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-}
-*/
 .section-image {
   position: relative;
   background-repeat: no-repeat;
@@ -6686,13 +6611,30 @@ section {
     .section-image {
       background-position: 50% 0%; } }
 
-.section-one {
-  background-position: right bottom; }
-
 .section-arrow {
   position: absolute;
   bottom: 1rem;
   width: 100%; }
+
+.section-one {
+  background-position: right bottom; }
+
+.section-one__film-forever {
+  height: 3rem;
+  width: auto;
+  vertical-align: baseline; }
+
+.section-three {
+  position: relative; }
+
+.section-three video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%; }
 
 footer {
   margin-top: 2rem;

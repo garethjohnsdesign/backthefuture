@@ -2,9 +2,9 @@
 title: BFI | Back The Future
 image: "/assets/img/og-image.png"
 section-one-image: "/uploads/section-01.jpg"
-section-one-header-text: Get behind film’s next generation.
+section-one-header-text: Get behind film’s next generation
 section-two-image: "/uploads/section-02.jpg"
-section-two-header-text: The BFI supports a love of film every step of the way.
+section-two-header-text: The BFI supports a love of film every step of the way
 section-two-paragraph-text: Our education programmes shape the film culture of tomorrow
   by investing in the passion of young people today.  We believe everyone deserves
   the opportunity to enjoy, learn from, and take their place in film, in whatever
@@ -17,7 +17,7 @@ section-three-paragraph-text: We support potential right from the beginning.  Th
   and feels that anything is possible.
 section-four-image: "/uploads/section-04.jpg"
 section-four-header-text: Every donation we receive can turn an hour into a day, a
-  script into a shoot, a dreamer into an artist.
+  script into a shoot, a dreamer into an artist
 section-four-sub-sections:
 - image: "/uploads/reaching-teaching.jpg"
   header: Reaching and Teaching
