@@ -6638,8 +6638,7 @@ section {
 
 .section-arrow {
   position: absolute;
-  bottom: 1rem;
-  width: 100%; }
+  bottom: 1rem; }
 
 /*
 .sticky-content {
@@ -6656,7 +6655,8 @@ section {
 
 .section-two {
   padding-top: 0rem;
-  padding-bottom: 0rem; }
+  padding-bottom: 0rem;
+  background-position: right bottom; }
 
 .section-two__content {
   padding-top: 3rem;
