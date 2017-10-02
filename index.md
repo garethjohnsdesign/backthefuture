@@ -5,16 +5,15 @@ section-one-image: "/uploads/section-01.jpg"
 section-one-header-text: Get behind film’s next generation
 section-two-image: "/uploads/section-02.jpg"
 section-two-header-text: The BFI supports a love of film every step of the way
-section-two-paragraph-text: Our education programmes shape the film culture of tomorrow
-  by investing in the passion of young people today.  We believe everyone deserves
-  the opportunity to enjoy, learn from, and take their place in film, in whatever
-  way they choose.
+section-two-paragraph-text: BACK THE FUTURE is a year-long campaign to raise £1 million
+  for BFI Education, which shapes the film culture of tomorrow by investing in the
+  passion of young people today. We believe everyone deserves the opportunity to enjoy,
+  learn from, and take their place in film, in whatever way they choose.
 section-three-image: "/uploads/section-03.jpg"
-section-three-paragraph-text: We support potential right from the beginning.  The
-  work we do deepens engagement with film, enriches learning, builds practical skills,
-  and helps young people to understand and contribute to the world around them. Your
-  help will ensure that everyone who comes through our doors has the BFI behind them,
-  and feels that anything is possible.
+section-three-paragraph-text: |-
+  We support potential right from the beginning.  The work we do deepens engagement with film, enriches learning, builds practical skills, and helps young people to understand and contribute to the world around them.
+
+  Your help will ensure that everyone who comes through our doors has the BFI behind them, and feels that anything is possible.
 section-four-image: "/uploads/section-04.jpg"
 section-four-header-text: Every donation we receive can turn an hour into a day, a
   script into a shoot, a dreamer into an artist
@@ -31,18 +30,17 @@ section-four-sub-sections:
     their background.
 - image: "/uploads/keeping-film-in-focus.jpg"
   header: Keeping Film in Focus
-  text: The BFI continues to champion film’s social, cultural and economic importance.
-    Our unique role as the UK’s advocate for moving image around the world underpins
-    the value and impact of film education.
+  text: Our unique role as the UK’s advocate for the moving image around the world
+    is critical in boosting the value and impact of film education.
 section-five-image: "/uploads/section-05.jpg"
 section-five-quotes:
 - image: "/uploads/steve-mcqueen.jpg"
   name: Steve McQueen
-  text: It is such an honour to support the BFI's 'Back to the Future' campaign as
-    they work to revolutionise our industry and make it as inclusive, accessible and
-    filled with the greatest talent from the widest possible pool in our society.
-    Hopefully, with campaigns such as this, no one will ever feel the doors to our
-    industry we're closed to them.
+  text: Film needs new voices in order to reflect our richly varied, diverse and challenging
+    society. It is crucial for our culture to be a representative one, and for the
+    stories people see to resonate deeply with them. We must support the BFI, whose
+    education programmes widen access to film, and enable more people to share their
+    stories.
 - image: "/uploads/david-morrisey.jpg"
   name: David Morrisey
   text: Film education, in all its forms, deserves pride of place in the classroom
@@ -59,7 +57,7 @@ section-five-quotes:
     they need to succeed and get ahead in an industry that can all too often seem
     dauntingly inaccessible. These initiatives need both our celebration and our support.
 - image: "/uploads/charlotte-rogan.jpg"
-  name: Charlotte Rogan
+  name: Charlotte Regan
   text: When I first came to the BFI I very rarely went to the cinema, now I go 2/3
     times a week. It was an absolute shock to be so immersed in incredible films,
     most of which I'd never seen before. The films I see at the BFI just further pushes
@@ -88,15 +86,16 @@ section-five-quotes:
 - image: "/uploads/paul-greengrass.jpg"
   name: Paul Greengrass
   text: |-
-    Back the Future’ is a vital new BFI initiative that aims to educate and nurture tomorrow’s film makers. If we are to build tomorrow's accessible and diverse film community, it's vital that we find and encourage new talent from all backgrounds and in every part of our country, and give them the best possible platform from which to tell their stories. These film makers of the future will help guide us in the years ahead, telling us stories of who we were, are and are to become.
+    Back the Future is a vital new BFI initiative that aims to educate and nurture tomorrow’s film makers. If we are to build tomorrow's accessible and diverse film community, it's vital that we find and encourage new talent from all backgrounds and in every part of our country, and give them the best possible platform from which to tell their stories. These filmmakers of the future will help guide us in the years ahead, telling us stories of who we were, are and are to become.
+
     There is no more important task…
 - image: "/uploads/ramola-garai.jpg"
-  name: Ramola Garai
-  text: It is such an honour to support the BFI's 'Back to the Future' campaign as
-    they work to revolutionise our industry and make it as inclusive, accessible and
-    filled with the greatest talent from the widest possible pool in our society.
-    Hopefully, with campaigns such as this, no one will ever feel the doors to our
-    industry we're closed to them.
+  name: Romola Garai
+  text: It is such an honour to support the BFI's Back the Future campaign as they
+    work to revolutionise our industry and make it as inclusive, accessible and filled
+    with the greatest talent from the widest possible pool in our society. Hopefully,
+    with campaigns such as this, no one will ever feel the doors to our industry were
+    closed to them.
 - image: "/uploads/sam-jones.jpg"
   name: Sam Jones
   text: The BFI opens the door to film for young people in such a noble way. The BFI
