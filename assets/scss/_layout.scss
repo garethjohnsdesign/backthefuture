@@ -154,8 +154,8 @@ blockquote {
       }
 }
 
-// 3. Buttons
-// -------------
+// 4. Buttons
+// ----------
 
 .button--gradient {
   @include button;
@@ -174,15 +174,15 @@ blockquote {
 }
   
 
-// 4. Animations
-// ------
+// 5. Animations
+// -------------
 
 [data-aos='fade-up'] {
   transform: translate(0, 1rem);
 }
 
 // 6. Navigation
-// ------
+// -------------
 
 .navigation {
   position: absolute;
@@ -233,8 +233,8 @@ blockquote {
   font-family: $header-font-family;
 }
 
-// 7. Sections
-// ------
+// 8. Sections
+// -----------
 
 section {
   padding-top: 5rem;
@@ -256,7 +256,7 @@ section {
   bottom: 1rem;
 }
 
-// 7. Section One
+// 9. Section One
 // --------------
 
 .section-one {
@@ -269,8 +269,8 @@ section {
   vertical-align: baseline;
 }
 
-// 7. Section Two
-// --------------
+// 10. Section Two
+// ---------------
 
 .section-two {
   padding-top: 0rem;
@@ -283,8 +283,8 @@ section {
   padding-bottom: 5rem;
 }
 
-// 7. Section Three
-// ----------------
+// 11. Section Three
+// -----------------
 
 .section-three {
   position: relative;
@@ -301,7 +301,7 @@ section {
 }
 
 
-// 4. Footer
+// 12. Footer
 // ---------
 
 footer {
