@@ -6610,7 +6610,8 @@ blockquote {
       padding: 2rem 2rem 1rem 2rem; } }
 
 .navigation-new {
-  background-color: #130325;
+  background-color: transparent;
+  transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
   padding: 2rem 1rem 1rem 1rem; }
   @media print, screen and (min-width: 40em) {
     .navigation-new {
@@ -6618,6 +6619,9 @@ blockquote {
   @media print, screen and (min-width: 64em) {
     .navigation-new {
       padding: 2rem 2rem 1rem 2rem; } }
+
+.navigation-new.is-stuck {
+  background-color: rgba(19, 3, 37, 0.75); }
 
 .navigation__logo {
   font-size: 1.75rem; }
@@ -6679,8 +6683,7 @@ section {
 
 footer {
   margin-top: 2rem;
-  padding: 2rem 1rem 2rem 1rem;
-  font-family: 'Marr Sans Semibold', sans-serif; }
+  padding: 2rem 1rem 2rem 1rem; }
   @media print, screen and (min-width: 40em) {
     footer {
       padding: 2rem 2rem 2rem 2rem; } }

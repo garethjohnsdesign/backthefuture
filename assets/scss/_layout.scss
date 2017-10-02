@@ -200,7 +200,8 @@ blockquote {
 }
 
 .navigation-new {
-  background-color: $color--dark-blue;
+  background-color: transparent;
+  transition: $primary-transition;
   padding: 2rem 1rem 1rem 1rem;
   @include breakpoint(medium) {
     padding: 2rem 2rem 1rem 2rem;
@@ -208,6 +209,10 @@ blockquote {
   @include breakpoint(large) {
     padding: 2rem 2rem 1rem 2rem;
   }
+}
+
+.navigation-new.is-stuck {
+  background-color: rgba($color--dark-blue, 0.75);
 }
 
 .navigation__logo {
@@ -308,7 +313,6 @@ footer {
   @include breakpoint(large) {
     padding: 3rem 3rem 3rem 3rem;
   }
-  font-family: 'Marr Sans Semibold', sans-serif;
 }
 
 footer .menu .menu-text {
