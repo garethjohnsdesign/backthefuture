@@ -6587,6 +6587,7 @@ i, cite, em, var, address, dfn {
       padding: 2rem 2rem 1rem 2rem; } }
 
 .navigation-new {
+  background-color: #130325;
   padding: 2rem 1rem 1rem 1rem;
   /*
   position: absolute;

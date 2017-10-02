@@ -169,7 +169,7 @@ i, cite, em, var, address, dfn {
 }
 
 .navigation-new {
-
+  background-color: $color--dark-blue;
   padding: 2rem 1rem 1rem 1rem;
   @include breakpoint(medium) {
     padding: 2rem 2rem 1rem 2rem;
@@ -246,7 +246,7 @@ section {
 */
 
 // 7. Section One
-// ------
+// --------------
 
 .section-one {
   background-position: right bottom;
@@ -257,6 +257,9 @@ section {
   width: auto;
   vertical-align: baseline;
 }
+
+// 7. Section Two
+// --------------
 
 .section-two {
   padding-top: 0rem;
@@ -270,7 +273,7 @@ section {
 }
 
 // 7. Section Three
-// ------
+// ----------------
 
 .section-three {
   position: relative;

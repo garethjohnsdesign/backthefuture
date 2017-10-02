@@ -63,12 +63,6 @@
 		"oAP": "\/_includes\/scripts.html",
 		"oF": 0
 		},
-	"\/_includes\/video.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_includes\/video.html",
-		"oF": 0
-		},
 	"\/_layouts\/compress.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -228,7 +222,7 @@
 		"oAP": "\/_uploads\/reaching-teaching.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_uploads\/sam-jones.jpg": {
@@ -8802,12 +8796,6 @@
 		"oAP": "\/humans.txt",
 		"oF": 0
 		},
-	"\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0
-		},
 	"\/index.md": {
 		"cS": 0,
 		"eF": 1,
@@ -8817,8 +8805,8 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0,
+		"oAP": "\/index.md",
+		"oF": 1,
 		"oFM": 9,
 		"oS": 0,
 		"pHT": 0,
