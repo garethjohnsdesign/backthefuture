@@ -71,7 +71,7 @@ section-five-quotes:
     their efforts, the landscape of our industry would be much more barren.
 - image: "/uploads/julian-fellowes.jpg"
   name: Julian Fellowes
-  text: The moving image is one of the mainstays of our world's culture.  Over the
+  text: The moving image is one of the mainstays of our world's culture. Over the
     past century it has entertained, informed and changed us.  Watching and learning
     from films and television is a sometimes joyful but always enriching experience,
     and it is an experience that should be available to everyone.  Education programmes
