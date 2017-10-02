@@ -104,6 +104,11 @@ img {
   outline: 0;
 }
 
+.grid-container {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
 // 3. Typography
 // -------------
 
@@ -121,6 +126,32 @@ a:hover {
 
 i, cite, em, var, address, dfn {
   font-style: normal;
+}
+
+blockquote {
+      quotes: "“""”""‘""’  ";
+      border-left: none;
+
+      &:before {
+        content: open-quote;
+        color: $color--white;
+        font-size: 4em;
+        line-height: 0.1em;
+        vertical-align: -0.4em;
+      }
+
+      &:after {
+        content: close-quote;
+        color: $color--white;
+        font-size: 4em;
+        line-height: 0.1em;
+        vertical-align: -0.6em;
+      }
+
+      .blockquote-content {
+        display: inline;
+        color: $color--white;
+      }
 }
 
 // 3. Buttons
@@ -177,23 +208,6 @@ i, cite, em, var, address, dfn {
   @include breakpoint(large) {
     padding: 2rem 2rem 1rem 2rem;
   }
-
-/*
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 3;
-*/
-/*
-  padding: 2rem 1rem 1rem 1rem;
-  @include breakpoint(medium) {
-    padding: 2rem 2rem 1rem 2rem;
-  }
-  @include breakpoint(large) {
-    padding: 2rem 2rem 1rem 2rem;
-  }
-*/
 }
 
 .navigation__logo {
@@ -236,14 +250,6 @@ section {
   position: absolute;
   bottom: 1rem;
 }
-
-// Sticky
-
-/*
-.sticky-content {
-  position: relative;
-}
-*/
 
 // 7. Section One
 // --------------
@@ -317,30 +323,4 @@ footer li a {
   height: 3rem;
   width: auto;
   vertical-align: baseline;
-}
-
-blockquote {
-      quotes: "“""”""‘""’  ";
-      border-left: none;
-
-      &:before {
-        content: open-quote;
-        color: $color--white;
-        font-size: 4em;
-        line-height: 0.1em;
-        vertical-align: -0.4em;
-      }
-
-      &:after {
-        content: close-quote;
-        color: $color--white;
-        font-size: 4em;
-        line-height: 0.1em;
-        vertical-align: -0.6em;
-      }
-
-      .blockquote-content {
-        display: inline;
-        color: $color--white;
-      }
 }
