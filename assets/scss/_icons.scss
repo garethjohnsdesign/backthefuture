@@ -25,6 +25,13 @@ Single-colored icons can be modified like so:
 
 .icon-logo-stacked-rev {
   font-size: 12.5rem;
+  margin-bottom: 1rem;
+  @include breakpoint(medium) {
+    font-size: 12.5rem;
+  }
+  @include breakpoint(large) {
+    font-size: 15rem;
+  }
 }
 
 .icon-chevron-down {

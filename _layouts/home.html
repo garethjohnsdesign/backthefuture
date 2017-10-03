@@ -23,13 +23,17 @@ layout: default
     </div>
     <!-- End Navigation -->
     
-    <div class="small-11 medium-10 cell section-two__content">
+    <div class="small-12 cell section-two__content">
+      
+      <div class="grid-container">
       <div class="grid-x grid-padding-x grid-padding-y">
-        <div class="small-11 medium-6 cell" data-aos="fade-in">
+        <div class="small-11 medium-8 large-6 cell" data-aos="fade-in">
             <h1>{{page.section-two-header-text}}</h1>
-            <p>{{page.section-two-paragraph-text}}</p>
+            <p>{{page.section-two-paragraph-text | markdownify}}</p>
         </div>
       </div>
+      </div>
+      
     </div>
     
 </section>
@@ -37,11 +41,13 @@ layout: default
 
 <!-- Three -->
 <section class="section-three section-image grid-x align-middle align-center" style="background-image: url({{page.section-three-image}}); min-height: 100vh;">
-  <div class="small-11 medium-10 cell">
+  <div class="small-12 cell">
+    
+    <div class="grid-container">
     <div class="grid-x grid-padding-x grid-padding-y">
-      <div class="small-11 medium-6 cell" data-aos="fade-in">
+      <div class="small-11 medium-8 large-6 cell" data-aos="fade-in">
         <h1>{{page.section-three-header-text}}</h1>
-        <p>{{page.section-three-paragraph-text}}</p>
+        <p>{{page.section-three-paragraph-text | markdownify}}</p>
         
 <!--
 <div id="video-gallery">
@@ -54,6 +60,9 @@ layout: default
        
       </div>
     </div>
+    </div>
+    
+    
   </div>
   
 <!--
@@ -69,17 +78,20 @@ layout: default
 
 <!-- Four -->
 <section class="section-image grid-x align-middle align-center" style="background-image: url({{page.section-four-image}}); min-height: 100vh;">
-  <div class="small-11 medium-10 cell">
+  <div class="small-12 cell">
         
     <!-- Title -->
+    <div class="grid-container">
     <div class="grid-x grid-padding-x">
       <div class="small-12 medium-12 cell" data-aos="fade-in">
-        <h3>{{page.section-four-header-text}}</h3>
+        <h2>{{page.section-four-header-text}}</h2>
       </div>
+    </div>
     </div>
     <!-- End Title -->
 
     <!-- Sub-Sections -->
+    <div class="grid-container">
     <div class="grid-x grid-padding-y">
       {% for sub-section in page.section-four-sub-sections %}
       <div class="small-12 medium-4 cell" data-aos="fade-in">
@@ -93,12 +105,13 @@ layout: default
         <div class="grid-x grid-padding-x grid-padding-y">
           <div class="small-12 cell">     
             <h4>{{ sub-section.header }}</h4>
-            <p>{{ sub-section.text }}</p>
+            <p>{{ sub-section.text | markdownify}}</p>
           </div>
         </div>
         
       </div>
       {% endfor %}
+    </div>
     </div>
     <!-- End Sub-Sections -->
 
@@ -110,7 +123,10 @@ layout: default
 <!-- Five -->
 <section class="section-image grid-x align-middle align-center" style="background-image: url({{page.section-five-image}});">
     <div class="small-12 cell">
-
+      
+      <div class="grid-container">
+      <div class="grid-x">
+      <div class="small-12 cell">
       <!-- Orbit -->
         <div class="orbit" role="region" aria-label="Quotes" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out; autoPlay: false;">
           <div class="orbit-wrapper">
@@ -148,6 +164,9 @@ layout: default
           </div>
         </div>     
       <!-- End Orbit -->
+      </div> 
+      </div> 
+      </div> 
 
 
     </div>  
