@@ -9,7 +9,6 @@ collections:
     title: Uploads
     output: false
 url: http://backthefuture.ufo.studio
-baseurl: 
 description: The BFI supports a love of film every step of the way.
 permalink: pretty
 exclude:
