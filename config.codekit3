@@ -8790,6 +8790,12 @@
 		"oAP": "\/humans.txt",
 		"oF": 0
 		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
 	"\/index.md": {
 		"cS": 0,
 		"eF": 1,
