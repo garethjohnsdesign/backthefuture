@@ -58,7 +58,7 @@ section-five-quotes:
     they need to succeed and get ahead in an industry that can all too often seem
     dauntingly inaccessible. These initiatives need both our celebration and our support.
 - image: "/uploads/charlotte-rogan.jpg"
-  name: Charlotte Regan
+  name: Charlotte Regan, BFI Film Academy & Future Film
   text: When I first came to the BFI I very rarely went to the cinema, now I go 2/3
     times a week. It was an absolute shock to be so immersed in incredible films,
     most of which I'd never seen before. The films I see at the BFI just further pushes
@@ -98,7 +98,7 @@ section-five-quotes:
     with campaigns such as this, no one will ever feel the doors to our industry were
     closed to them.
 - image: "/uploads/sam-jones.jpg"
-  name: Sam Jones
+  name: Sam Jones, BFI Film Academy
   text: The BFI opens the door to film for young people in such a noble way. The BFI
     doesn't offer young people unlimited funding, nor perfect career paths designed
     to set us up for life. It does something which I think is much more valuable.
