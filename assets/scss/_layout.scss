@@ -104,11 +104,6 @@ img {
   outline: 0;
 }
 
-.grid-container {
-  padding-left: 0rem;
-  padding-right: 0rem;
-}
-
 // 3. Typography
 // -------------
 
@@ -267,6 +262,9 @@ section {
   height: 3rem;
   width: auto;
   vertical-align: baseline;
+  @include breakpoint(medium) {
+  height: 5rem;
+  }
 }
 
 // 10. Section Two
