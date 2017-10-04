@@ -8,8 +8,8 @@ collections:
   uploads:
     title: Uploads
     output: false
-url: http://backthefuture.ufo.studio
-baseurl: 
+url: https://www.bfi.org.uk/backthefuture
+baseurl: "/"
 description: The BFI supports a love of film every step of the way.
 permalink: pretty
 exclude:
@@ -36,7 +36,6 @@ kramdown:
 highlighter: rouge
 colophon: http://garethjohnsdesign.com
 company: BFI
-email: info@backthefuture.com
 google_site_verification: 
 analytics: 
 logo: "/assets/img/logo.svg"
